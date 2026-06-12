@@ -1,0 +1,424 @@
+:root{
+  --paper:#EFE6D2;
+  --paper-deep:#E4D8BE;
+  --paper-card:#F8F1E2;
+  --ink:#2C2117;
+  --ink-soft:#6B5E4F;
+  --line:#D6C7A4;
+  --moss:#5C6E49;
+  --moss-soft:#E7ECDE;
+  --brass:#B9831E;
+  --brass-soft:#F4E8CC;
+  --wine:#6E3530;
+  --wine-soft:#F1E0DD;
+}
+
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--paper);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(44,33,23,0.045) 1px, transparent 0);
+  background-size: 22px 22px;
+  color:var(--ink);
+  font-family:"Source Sans 3", sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{ color:var(--ink); }
+
+.wrap{
+  max-width:880px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+/* ---------- Site nav ---------- */
+nav.site-nav{
+  padding:24px 0 0;
+}
+nav.site-nav .nav-inner{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  align-items:baseline;
+  font-family:"Space Mono", monospace;
+  font-size:0.85rem;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+}
+nav.site-nav a{
+  text-decoration:none;
+  color:var(--ink-soft);
+  border-bottom:1px solid transparent;
+  padding-bottom:2px;
+}
+nav.site-nav a:hover,
+nav.site-nav a.active{
+  color:var(--ink);
+  border-bottom:1px solid var(--ink);
+}
+nav.site-nav .nav-brand{
+  font-family:"Fraunces", serif;
+  font-weight:600;
+  font-size:1.1rem;
+  text-transform:none;
+  letter-spacing:0;
+  color:var(--ink);
+  margin-right:auto;
+}
+
+/* ---------- Header / Hero ---------- */
+header.hero{
+  padding:40px 0 40px;
+  position:relative;
+}
+.postmark{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:108px;
+  height:108px;
+  border:2.5px solid var(--ink);
+  border-radius:50%;
+  transform:rotate(-8deg);
+  font-family:"Space Mono", monospace;
+  text-transform:uppercase;
+  font-size:11.5px;
+  letter-spacing:0.12em;
+  text-align:center;
+  color:var(--ink);
+  flex-direction:column;
+  gap:2px;
+  margin-bottom:28px;
+  position:relative;
+}
+.postmark::before{
+  content:"";
+  position:absolute;
+  inset:8px;
+  border:1px dashed var(--ink);
+  border-radius:50%;
+  opacity:0.55;
+}
+.postmark .city{ font-weight:700; font-size:13px; }
+.postmark .state{ font-size:10px; }
+
+h1.title{
+  font-family:"Fraunces", serif;
+  font-weight:600;
+  font-size:clamp(2.6rem, 7vw, 4.4rem);
+  line-height:1.02;
+  margin:0 0 14px;
+  letter-spacing:-0.01em;
+}
+.title em{
+  font-style:italic;
+  font-weight:400;
+  color:var(--ink-soft);
+}
+
+h1.page-title{
+  font-family:"Fraunces", serif;
+  font-weight:600;
+  font-size:clamp(2.2rem, 6vw, 3.4rem);
+  line-height:1.05;
+  margin:0 0 14px;
+  letter-spacing:-0.01em;
+}
+
+.tagline{
+  font-family:"Space Mono", monospace;
+  font-size:0.95rem;
+  color:var(--ink-soft);
+  margin:0 0 28px;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+}
+.tagline .dot{ color: var(--line); padding:0 6px; }
+
+.lede{
+  font-size:1.18rem;
+  max-width:640px;
+  color:#3A2E20;
+}
+
+.hr{
+  border:none;
+  border-top:1px dashed var(--line);
+  margin:48px 0;
+}
+
+/* ---------- Section headings (journal-entry style) ---------- */
+.entry-head{
+  display:flex;
+  align-items:baseline;
+  gap:18px;
+  margin-bottom:28px;
+  flex-wrap:wrap;
+}
+.entry-head h2{
+  font-family:"Fraunces", serif;
+  font-weight:600;
+  font-size:clamp(1.7rem, 4.5vw, 2.4rem);
+  margin:0;
+}
+.entry-date{
+  font-family:"Space Mono", monospace;
+  font-size:0.85rem;
+  color:var(--ink-soft);
+  border-bottom:1px solid var(--line);
+  padding-bottom:2px;
+}
+
+/* ---------- Ticket stub gig list ---------- */
+.gig-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.gig{
+  display:grid;
+  grid-template-columns:84px 1fr auto;
+  gap:18px;
+  align-items:center;
+  background:var(--paper-card);
+  border:1px solid var(--line);
+  border-radius:4px;
+  padding:14px 18px;
+  position:relative;
+}
+.gig::before, .gig::after{
+  content:"";
+  position:absolute;
+  width:14px; height:14px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:50%;
+  top:50%;
+  transform:translateY(-50%);
+}
+.gig::before{ left:-8px; }
+.gig::after{ right:-8px; }
+.gig .date{
+  font-family:"Space Mono", monospace;
+  font-weight:700;
+  font-size:1.05rem;
+  line-height:1.15;
+  border-right:1px dashed var(--line);
+  padding-right:14px;
+}
+.gig .date .day{ display:block; font-size:0.7rem; font-weight:400; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.08em; }
+.gig .info .venue{ font-weight:700; font-size:1.02rem; }
+.gig .info .place{ font-size:0.92rem; color:var(--ink-soft); }
+.gig .info .time{ font-size:0.85rem; color:var(--ink-soft); font-family:"Space Mono",monospace; margin-top:2px;}
+.band-tag{
+  font-family:"Space Mono", monospace;
+  font-size:0.72rem;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  padding:5px 10px;
+  border-radius:3px;
+  white-space:nowrap;
+  font-weight:700;
+}
+.band-tag.nighthog{ background:var(--moss-soft); color:var(--moss); }
+.band-tag.cover6{ background:var(--brass-soft); color:var(--brass); }
+.band-tag.jazz{ background:var(--wine-soft); color:var(--wine); }
+
+@media (max-width: 560px){
+  .gig{ grid-template-columns:64px 1fr; }
+  .band-tag{ grid-column:1 / -1; justify-self:start; margin-top:6px; }
+  .gig .date{ font-size:0.92rem; }
+}
+
+/* ---------- Project cards ---------- */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+  gap:18px;
+}
+.project{
+  background:var(--paper-card);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:24px;
+  border-top:6px solid var(--ink);
+}
+.project.nighthog{ border-top-color:var(--moss); }
+.project.cover6{ border-top-color:var(--brass); }
+.project.jazz{ border-top-color:var(--wine); }
+.project h3{
+  font-family:"Fraunces", serif;
+  font-size:1.5rem;
+  margin:0 0 6px;
+}
+.project .role{
+  font-family:"Space Mono", monospace;
+  font-size:0.75rem;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  color:var(--ink-soft);
+  margin-bottom:12px;
+}
+.project p{ margin:0 0 16px; color:#3A2E20; }
+.project a.link{
+  font-family:"Space Mono", monospace;
+  font-size:0.85rem;
+  text-decoration:none;
+  border-bottom:1px solid var(--ink);
+  padding-bottom:1px;
+}
+.project a.link:hover{ color:var(--ink-soft); border-color:var(--ink-soft); }
+
+/* ---------- About / bio ---------- */
+.about{
+  display:grid;
+  grid-template-columns:200px 1fr;
+  gap:32px;
+  align-items:start;
+}
+.about .frame{
+  aspect-ratio:4/5;
+  background:var(--paper-card);
+  border:1px solid var(--line);
+  border-radius:4px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:"Space Mono", monospace;
+  font-size:0.78rem;
+  color:var(--ink-soft);
+  text-align:center;
+  padding:16px;
+  transform:rotate(-1.5deg);
+  box-shadow: 4px 6px 0 rgba(44,33,23,0.06);
+}
+.about .credentials{
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px dashed var(--line);
+  font-size:0.92rem;
+  color:var(--ink-soft);
+}
+.about .credentials li{ margin-bottom:6px; }
+@media (max-width:640px){
+  .about{ grid-template-columns:1fr; }
+  .about .frame{ max-width:200px; }
+}
+
+/* ---------- Connect / footer ---------- */
+.connect-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.connect-grid a{
+  font-family:"Space Mono", monospace;
+  font-size:0.82rem;
+  text-decoration:none;
+  background:var(--paper-card);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:8px 16px;
+  transition:transform .12s ease, box-shadow .12s ease;
+  display:inline-block;
+}
+.connect-grid a:hover{
+  transform:translateY(-2px);
+  box-shadow:2px 4px 0 rgba(44,33,23,0.08);
+}
+
+footer{
+  margin-top:60px;
+  padding:32px 0 64px;
+  font-family:"Space Mono", monospace;
+  font-size:0.78rem;
+  color:var(--ink-soft);
+  border-top:1px dashed var(--line);
+}
+
+/* ---------- Video grid ---------- */
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:14px;
+}
+.video-card{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  background:var(--paper-card);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:18px;
+  text-decoration:none;
+  border-left:6px solid var(--moss);
+}
+.video-card.edu{ border-left-color:var(--wine); }
+.video-card .play{
+  font-size:1.1rem;
+  color:var(--moss);
+}
+.video-card.edu .play{ color:var(--wine); }
+.video-card .vlabel{
+  font-family:"Fraunces", serif;
+  font-weight:600;
+  font-size:1.05rem;
+  color:var(--ink);
+}
+.video-card .vsub{
+  font-family:"Space Mono", monospace;
+  font-size:0.78rem;
+  color:var(--ink-soft);
+}
+
+.link-arrow{
+  font-family:"Space Mono", monospace;
+  font-size:0.9rem;
+  text-decoration:none;
+  border-bottom:1px solid var(--ink);
+  padding-bottom:1px;
+}
+.link-arrow:hover{ color:var(--ink-soft); border-color:var(--ink-soft); }
+
+/* ---------- Booking box ---------- */
+.booking-box{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  background:var(--paper-card);
+  border:1px dashed var(--line);
+  border-radius:6px;
+  padding:28px;
+  flex-wrap:wrap;
+}
+.postmark.small{
+  width:84px;
+  height:84px;
+  font-size:10px;
+  flex-shrink:0;
+}
+.postmark.small .city{ font-size:12px; }
+.postmark.small .state{ font-size:9px; }
+
+/* ---------- Booking form (simple mailto-based) ---------- */
+.booking-links{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:16px;
+}
+
+/* visible focus */
+a:focus-visible, button:focus-visible{
+  outline:2px solid var(--wine);
+  outline-offset:3px;
+}
+
+@media (prefers-reduced-motion:no-preference){
+  .gig, .project, .video-card{ transition: transform .15s ease, box-shadow .15s ease; }
+  .gig:hover, .project:hover, .video-card:hover{ transform:translateY(-2px); box-shadow:3px 5px 0 rgba(44,33,23,0.07); }
+}
