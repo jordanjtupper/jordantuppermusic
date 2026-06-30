@@ -1,149 +1,117 @@
-/* Jordan Tupper Music calendar export helpers
-   - Builds individual Google Calendar links
-   - Builds a downloadable/subscribable .ics file from loaded gig feeds
-   - Designed to work with the gig feed objects we created for Night Hog, Cover 6, and Baton Rouge Jazz
-*/
-
+/* Jordan Tupper Music calendar export helper
+   Safe version: waits for the visible gig list to render before adding Google Calendar links.
+   If the main calendar fails to load, this file will not break the page. */
 (function () {
-  const FEEDS = [
-    'https://nighthogbr.com/gigs-feed.js',
-    'https://cover6band.com/gigs-feed.js',
-    'https://batonrougejazz.com/gigs-feed.js'
-  ];
-
   function pad(n) { return String(n).padStart(2, '0'); }
 
-  function normalizeText(value) {
-    return String(value || '')
-      .replace(/\\/g, '\\\\')
-      .replace(/\n/g, '\\n')
-      .replace(/,/g, '\\,')
-      .replace(/;/g, '\\;');
+  function parseDateFromGig(gig) {
+    const raw = gig.getAttribute('data-date') || gig.dataset.date;
+    if (!raw) return null;
+    const d = new Date(raw + 'T00:00:00');
+    return Number.isNaN(d.getTime()) ? null : d;
   }
 
-  function parseLocalDateTime(date, time) {
-    const [y, m, d] = String(date).split('-').map(Number);
-    const [hh, mm] = String(time || '19:00').split(':').map(Number);
-    return new Date(y, m - 1, d, hh || 0, mm || 0, 0);
+  function extractText(gig, selector) {
+    const el = gig.querySelector(selector);
+    return el ? el.textContent.trim() : '';
   }
 
-  function toGoogleDate(dt) {
-    return dt.getFullYear() + pad(dt.getMonth() + 1) + pad(dt.getDate()) + 'T' + pad(dt.getHours()) + pad(dt.getMinutes()) + '00';
+  function normalizeTimeText(text) {
+    return (text || '').replace(/\s+/g, ' ').trim();
   }
 
-  function toICSDate(dt) {
-    // Floating local time, which works well for a Louisiana performance calendar
-    return dt.getFullYear() + pad(dt.getMonth() + 1) + pad(dt.getDate()) + 'T' + pad(dt.getHours()) + pad(dt.getMinutes()) + '00';
+  function parseTimeRange(timeText) {
+    const clean = normalizeTimeText(timeText).toLowerCase();
+    if (!clean || clean.includes('tba') || clean.includes('private')) {
+      return { startHour: 19, startMinute: 0, endHour: 22, endMinute: 0 };
+    }
+
+    const parts = clean.split(/\s*[–-]\s*/);
+    function parseOne(t, fallbackAmPm) {
+      const m = t.match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)?/i);
+      if (!m) return null;
+      let hour = parseInt(m[1], 10);
+      const minute = m[2] ? parseInt(m[2], 10) : 0;
+      const ampm = m[3] || fallbackAmPm || '';
+      if (ampm === 'pm' && hour !== 12) hour += 12;
+      if (ampm === 'am' && hour === 12) hour = 0;
+      return { hour, minute, ampm };
+    }
+
+    const endAmPmMatch = parts[1] ? parts[1].match(/(am|pm)/i) : null;
+    const implied = endAmPmMatch ? endAmPmMatch[1].toLowerCase() : undefined;
+    const start = parseOne(parts[0], implied) || { hour: 19, minute: 0 };
+    const end = parseOne(parts[1] || '', undefined) || { hour: start.hour + 3, minute: start.minute };
+    return { startHour: start.hour, startMinute: start.minute, endHour: end.hour, endMinute: end.minute };
   }
 
-  function getGigStart(gig) {
-    return parseLocalDateTime(gig.date, gig.startTime || gig.start || gig.timeStart || '19:00');
+  function toGoogleDate(date, hour, minute) {
+    const d = new Date(date);
+    d.setHours(hour, minute, 0, 0);
+    // Google accepts UTC compact timestamps. Convert local to UTC.
+    return d.getUTCFullYear() +
+      pad(d.getUTCMonth() + 1) +
+      pad(d.getUTCDate()) + 'T' +
+      pad(d.getUTCHours()) +
+      pad(d.getUTCMinutes()) +
+      '00Z';
   }
 
-  function getGigEnd(gig) {
-    const start = getGigStart(gig);
-    if (gig.endTime || gig.end || gig.timeEnd) return parseLocalDateTime(gig.date, gig.endTime || gig.end || gig.timeEnd);
-    return new Date(start.getTime() + 3 * 60 * 60 * 1000);
-  }
+  function addButtons() {
+    const gigs = Array.from(document.querySelectorAll('.gig'));
+    if (!gigs.length) return false;
 
-  function gigTitle(gig) {
-    const band = gig.band || gig.project || 'Jordan Tupper';
-    const venue = gig.venue || 'Performance';
-    return `${band} at ${venue}`;
-  }
+    gigs.forEach(function (gig) {
+      if (gig.querySelector('.add-google-calendar')) return;
 
-  function gigLocation(gig) {
-    return [gig.venue, gig.city, gig.state].filter(Boolean).join(', ');
-  }
+      const date = parseDateFromGig(gig);
+      if (!date) return;
 
-  function gigDescription(gig) {
-    const parts = [];
-    if (gig.band || gig.project) parts.push(`Band: ${gig.band || gig.project}`);
-    if (gig.status === 'private') parts.push('Private event');
-    if (gig.url) parts.push(gig.url);
-    parts.push('Generated from jordantuppermusic.com performance calendar.');
-    return parts.join('\n');
-  }
+      const venue = extractText(gig, '.venue') || extractText(gig, '.gig-venue h3') || 'Performance';
+      const place = extractText(gig, '.place') || extractText(gig, '.gig-venue p') || 'Baton Rouge, LA';
+      const timeText = extractText(gig, '.time') || extractText(gig, '.gig-time') || '';
+      const band = extractText(gig, '.band-tag') || 'Jordan Tupper';
+      const times = parseTimeRange(timeText);
 
-  function googleCalendarUrl(gig) {
-    const start = getGigStart(gig);
-    const end = getGigEnd(gig);
-    const params = new URLSearchParams({
-      action: 'TEMPLATE',
-      text: gigTitle(gig),
-      dates: `${toGoogleDate(start)}/${toGoogleDate(end)}`,
-      details: gigDescription(gig),
-      location: gigLocation(gig),
-      ctz: 'America/Chicago'
-    });
-    return `https://calendar.google.com/calendar/render?${params.toString()}`;
-  }
+      const start = toGoogleDate(date, times.startHour, times.startMinute);
+      let endDate = new Date(date);
+      if (times.endHour < times.startHour) endDate.setDate(endDate.getDate() + 1);
+      const end = toGoogleDate(endDate, times.endHour, times.endMinute);
 
-  function buildICS(gigs) {
-    const now = new Date();
-    const stamp = now.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
-    const lines = [
-      'BEGIN:VCALENDAR',
-      'VERSION:2.0',
-      'PRODID:-//Jordan Tupper Music//Performance Calendar//EN',
-      'CALSCALE:GREGORIAN',
-      'METHOD:PUBLISH',
-      'X-WR-CALNAME:Jordan Tupper Performances',
-      'X-WR-CALDESC:Night Hog, Cover 6, and Standley, Tupper & Petersen performances',
-      'X-WR-TIMEZONE:America/Chicago'
-    ];
+      const params = new URLSearchParams({
+        action: 'TEMPLATE',
+        text: band + ' at ' + venue,
+        dates: start + '/' + end,
+        details: 'Performance listed at jordantuppermusic.com',
+        location: venue + ', ' + place
+      });
 
-    gigs.forEach((gig, idx) => {
-      const start = getGigStart(gig);
-      const end = getGigEnd(gig);
-      const uid = `${gig.date}-${(gig.band || 'jtm').replace(/[^a-z0-9]/gi, '').toLowerCase()}-${(gig.venue || 'gig').replace(/[^a-z0-9]/gi, '').toLowerCase()}-${idx}@jordantuppermusic.com`;
-      lines.push(
-        'BEGIN:VEVENT',
-        `UID:${uid}`,
-        `DTSTAMP:${stamp}`,
-        `DTSTART;TZID=America/Chicago:${toICSDate(start)}`,
-        `DTEND;TZID=America/Chicago:${toICSDate(end)}`,
-        `SUMMARY:${normalizeText(gigTitle(gig))}`,
-        `LOCATION:${normalizeText(gigLocation(gig))}`,
-        `DESCRIPTION:${normalizeText(gigDescription(gig))}`,
-        'END:VEVENT'
-      );
-    });
-
-    lines.push('END:VCALENDAR');
-    return lines.join('\r\n');
-  }
-
-  function installGoogleLinks(containerSelector = '.gig') {
-    document.querySelectorAll(containerSelector).forEach((row) => {
-      if (row.querySelector('.add-google-calendar')) return;
-      const gig = row.__gigData;
-      if (!gig) return;
       const link = document.createElement('a');
       link.className = 'add-google-calendar';
-      link.href = googleCalendarUrl(gig);
+      link.href = 'https://calendar.google.com/calendar/render?' + params.toString();
       link.target = '_blank';
-      link.rel = 'noopener';
+      link.rel = 'noopener noreferrer';
       link.textContent = 'Add to Google Calendar';
-      row.appendChild(link);
+      link.style.display = 'inline-block';
+      link.style.marginTop = '6px';
+      link.style.fontSize = '0.8rem';
+
+      const info = gig.querySelector('.info') || gig.querySelector('.gig-venue') || gig;
+      info.appendChild(link);
     });
+
+    return true;
   }
 
-  function createDownloadButton(gigs, targetId = 'calendar-download') {
-    const target = document.getElementById(targetId);
-    if (!target) return;
-    const ics = buildICS(gigs);
-    const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    target.href = url;
-    target.download = 'jordan-tupper-performances.ics';
-    target.textContent = 'Download performance calendar (.ics)';
-  }
+  let tries = 0;
+  const timer = setInterval(function () {
+    tries += 1;
+    if (addButtons() || tries > 30) clearInterval(timer);
+  }, 300);
 
-  window.JTCalendarExport = {
-    googleCalendarUrl,
-    buildICS,
-    createDownloadButton,
-    installGoogleLinks
-  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addButtons);
+  } else {
+    addButtons();
+  }
 })();
