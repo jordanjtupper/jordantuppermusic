@@ -192,3 +192,4 @@
     render();
   }
 })();
+<script src="/calendar-export.js"></script>
