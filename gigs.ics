@@ -1,0 +1,362 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Jordan Tupper Music//Performance Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Jordan Tupper Performances
+X-WR-CALDESC:Upcoming performances for Jordan Tupper, Night Hog, Cover 6,
+  and Standley, Tupper & Petersen.
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VEVENT
+UID:b029782ea1243b2c@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — The Brakes Bar
+LOCATION:The Brakes Bar\, Baton Rouge\, LA
+DESCRIPTION:Standley\, Tupper & Petersen performance at The Brakes Bar. D
+ etails: https://batonrougejazz.com
+DTSTART:20260701T230000Z
+DTEND:20260702T030000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:5b197566ab881015@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Tequila's
+LOCATION:Tequila's\, LA
+DESCRIPTION:Cover 6 performance at Tequila's. Details: https://cover6band
+ .com
+DTSTART:20260703T230000Z
+DTEND:20260704T020000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:b455d0c33d744cf5@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Phil Brady's
+LOCATION:Phil Brady's\, Baton Rouge\, LA
+DESCRIPTION:Cover 6 performance at Phil Brady's. Details: https://cover6b
+ and.com
+DTSTART:20260705T013000Z
+DTEND:20260705T043000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:93203ed5d6054781@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — The Brakes Bar
+LOCATION:The Brakes Bar\, Baton Rouge\, LA
+DESCRIPTION:Standley\, Tupper & Petersen performance at The Brakes Bar. D
+ etails: https://batonrougejazz.com
+DTSTART:20260715T230000Z
+DTEND:20260716T030000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:c84c8db4431f4dbe@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Big J's Side Porch
+LOCATION:Big J's Side Porch\, LA
+DESCRIPTION:Cover 6 performance at Big J's Side Porch. Details: https://c
+ over6band.com
+DTSTART:20260718T230000Z
+DTEND:20260719T020000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:4b3ee94f2482a5ea@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — The Brakes Bar
+LOCATION:The Brakes Bar\, Baton Rouge\, LA
+DESCRIPTION:Standley\, Tupper & Petersen performance at The Brakes Bar. D
+ etails: https://batonrougejazz.com
+DTSTART:20260722T230000Z
+DTEND:20260723T030000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:4846e35a0718fd21@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Crazy Dave's
+LOCATION:Crazy Dave's\, Livingston\, LA
+DESCRIPTION:Cover 6 performance at Crazy Dave's. Details: https://cover6b
+ and.com
+DTSTART:20260725T020000Z
+DTEND:20260725T060000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:0c151198a12a287e@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — T Rivers Restaurant and Lounge
+LOCATION:T Rivers Restaurant and Lounge\, LA
+DESCRIPTION:Cover 6 performance at T Rivers Restaurant and Lounge. Detail
+ s: https://cover6band.com
+DTSTART:20260725T230000Z
+DTEND:20260726T030000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:15fac787043e7500@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — Copa
+LOCATION:Copa\, Baton Rouge\, LA
+DESCRIPTION:Standley\, Tupper & Petersen performance at Copa. Details: ht
+ tps://batonrougejazz.com
+DTSTART:20260726T150000Z
+DTEND:20260726T180000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:62c205ad46af977b@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — The Brakes Bar
+LOCATION:The Brakes Bar\, Baton Rouge\, LA
+DESCRIPTION:Standley\, Tupper & Petersen performance at The Brakes Bar. D
+ etails: https://batonrougejazz.com
+DTSTART:20260729T230000Z
+DTEND:20260730T030000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:e50c20054d5d2b89@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Locals
+LOCATION:Locals\, LA
+DESCRIPTION:Cover 6 performance at Locals. Details: https://cover6band.co
+ m
+DTSTART:20260801T013000Z
+DTEND:20260801T053000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:d4b1bba392875bf2@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Tequila's
+LOCATION:Tequila's\, Denham Springs\, LA
+DESCRIPTION:Cover 6 performance at Tequila's. Details: https://cover6band
+ .com
+DTSTART:20260801T230000Z
+DTEND:20260802T020000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:022b8823cda0182a@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Sun Outdoors RV Resort
+LOCATION:Sun Outdoors RV Resort\, LA
+DESCRIPTION:Cover 6 performance at Sun Outdoors RV Resort. Details: https
+ ://cover6band.com
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260809
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:0b93b542b94abf9e@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — Community Grocery
+LOCATION:Community Grocery\, Woodville\, MS
+DESCRIPTION:Standley\, Tupper & Petersen performance at Community Grocery
+ . Details: https://batonrougejazz.com
+DTSTART:20260808T160000Z
+DTEND:20260808T190000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:f12a76195fdd68d5@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — Copa
+LOCATION:Copa\, Baton Rouge\, LA
+DESCRIPTION:Standley\, Tupper & Petersen performance at Copa. Details: ht
+ tps://batonrougejazz.com
+DTSTART:20260809T150000Z
+DTEND:20260809T180000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:f3498e3d5d321140@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Swamp Chicken
+LOCATION:Swamp Chicken\, LA
+DESCRIPTION:Cover 6 performance at Swamp Chicken. Details: https://cover6
+ band.com
+DTSTART:20260815T020000Z
+DTEND:20260815T060000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:6274980dcbefa0de@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Tequila's
+LOCATION:Tequila's\, Zachary\, LA
+DESCRIPTION:Cover 6 performance at Tequila's. Details: https://cover6band
+ .com
+DTSTART:20260815T230000Z
+DTEND:20260816T020000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:f95df197b4be349d@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — Community Grocery
+LOCATION:Community Grocery\, Woodville\, MS
+DESCRIPTION:Standley\, Tupper & Petersen performance at Community Grocery
+ . Details: https://batonrougejazz.com
+DTSTART:20260822T160000Z
+DTEND:20260822T190000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:a3eb8554964ac5c8@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Victoria's
+LOCATION:Victoria's\, LA
+DESCRIPTION:Cover 6 performance at Victoria's. Details: https://cover6ban
+ d.com
+DTSTART:20260822T230000Z
+DTEND:20260823T020000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:c7351958179d12a0@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Night Hog — Charlie's Lounge
+LOCATION:Charlie's Lounge\, Addis\, LA
+DESCRIPTION:Night Hog performance at Charlie's Lounge. Details: https://n
+ ighthogbr.com
+DTSTART:20260829T010000Z
+DTEND:20260829T040000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:ec6777ab4a4e76bd@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Big J's Side Porch
+LOCATION:Big J's Side Porch\, LA
+DESCRIPTION:Cover 6 performance at Big J's Side Porch. Details: https://c
+ over6band.com
+DTSTART:20260829T230000Z
+DTEND:20260830T020000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:a6ee65ed3c7354cc@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Night Hog — The Moonlight Inn
+LOCATION:The Moonlight Inn\, French Settlement\, LA
+DESCRIPTION:Night Hog performance at The Moonlight Inn. Details: https://
+ nighthogbr.com
+DTSTART:20260830T020000Z
+DTEND:20260830T050000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:dbbf0f601ded52f6@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Patriot RV Campground
+LOCATION:Patriot RV Campground\, Livingston\, LA
+DESCRIPTION:Cover 6 performance at Patriot RV Campground. Details: https:
+ //cover6band.com
+DTSTART:20260905T163000Z
+DTEND:20260905T193000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:b63dc6574a89221f@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — Bin 77
+LOCATION:Bin 77\, Baton Rouge\, LA
+DESCRIPTION:Standley\, Tupper & Petersen performance at Bin 77. Details: 
+ https://batonrougejazz.com
+DTSTART:20260915T223000Z
+DTEND:20260916T013000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:8fa7f86e6a016c63@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Ragon's
+LOCATION:Ragon's\, Clinton\, LA
+DESCRIPTION:Cover 6 performance at Ragon's. Details: https://cover6band.c
+ om
+DTSTART:20260919T010000Z
+DTEND:20260919T050000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:cb3a508b1d117f34@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — T's Country Bar
+LOCATION:T's Country Bar\, LA
+DESCRIPTION:Cover 6 performance at T's Country Bar. Details: https://cove
+ r6band.com
+DTSTART:20260920T020000Z
+DTEND:20260920T050000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:b82520c08d53061f@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Night Hog — Private Event
+LOCATION:Private Event\, Baton Rouge\, LA
+DESCRIPTION:Night Hog performance at Private Event. Details: https://nigh
+ thogbr.com Private event.
+DTSTART:20261011T010000Z
+DTEND:20261011T040000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:5a21cb475b715568@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Night Hog — The Moonlight Inn
+LOCATION:The Moonlight Inn\, French Settlement\, LA
+DESCRIPTION:Night Hog performance at The Moonlight Inn. Details: https://
+ nighthogbr.com
+DTSTART:20261025T020000Z
+DTEND:20261025T050000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:042cbee92e182998@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — Patriot RV Campground
+LOCATION:Patriot RV Campground\, Livingston\, LA
+DESCRIPTION:Cover 6 performance at Patriot RV Campground. Details: https:
+ //cover6band.com
+DTSTART:20261107T173000Z
+DTEND:20261107T203000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:07eb424fcc14530a@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Cover 6 — T's Country Bar
+LOCATION:T's Country Bar\, LA
+DESCRIPTION:Cover 6 performance at T's Country Bar. Details: https://cove
+ r6band.com
+DTSTART:20261122T030000Z
+DTEND:20261122T060000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:e2fde77e77ebe6e2@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Standley\, Tupper & Petersen — Private Wedding
+LOCATION:Private Wedding\, New Orleans\, LA
+DESCRIPTION:Standley\, Tupper & Petersen performance at Private Wedding. 
+ Details: https://batonrougejazz.com Private event.
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+BEGIN:VEVENT
+UID:91b266d577a61af6@jordantuppermusic.com
+DTSTAMP:20260630T175416Z
+SUMMARY:Night Hog — The Moonlight Inn
+LOCATION:The Moonlight Inn\, French Settlement\, LA
+DESCRIPTION:Night Hog performance at The Moonlight Inn. Details: https://
+ nighthogbr.com
+DTSTART:20261220T030000Z
+DTEND:20261220T060000Z
+URL:https://jordantuppermusic.com/#shows
+END:VEVENT
+END:VCALENDAR
