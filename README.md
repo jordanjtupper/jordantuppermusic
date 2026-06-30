@@ -1,16 +1,39 @@
-# Jordan Tupper Music merged calendar
+# Jordan Tupper Music Google Calendar Export
 
-Upload these files to the root of the `jordantuppermusic.com` GitHub repo:
+Upload `calendar-export.js` to the root of `jordantuppermusic.com`.
 
-- `index.html`
-- `jordan-calendar.js`
+Then add this before the closing `</body>` tag, after `jordan-calendar.js`:
 
-This page reads these three public feed files:
+```html
+<script src="/calendar-export.js"></script>
+```
 
-- `https://nighthogbr.com/gigs-feed.js`
-- `https://cover6band.com/gigs-feed.js`
-- `https://www.batonrougejazz.com/gigs-feed.js`
+Add this near the Upcoming Shows heading:
 
-Do not edit Jordan Tupper Music gigs manually anymore. Update dates on each band's `gigs-feed.js` file, and the Jordan site will pull them together, sort them, hide past dates, and generate event schema.
+```html
+<a id="calendar-download" class="calendar-download" href="#">Download performance calendar (.ics)</a>
+```
 
-Important: the band sites must already have their `gigs-feed.js` files uploaded and published.
+The cleanest long-term setup is to have `jordan-calendar.js` expose the merged gigs as:
+
+```js
+window.JORDAN_ALL_GIGS = mergedGigs;
+window.JTCalendarExport.createDownloadButton(window.JORDAN_ALL_GIGS);
+```
+
+For Google Calendar sharing with Amanda:
+
+1. Upload the site.
+2. Visit jordantuppermusic.com.
+3. Download `jordan-tupper-performances.ics`.
+4. In Google Calendar, create or open a calendar named `Jordan Tupper Performances`.
+5. Import the `.ics` file into that calendar.
+6. Share that Google Calendar with Amanda.
+
+For a true live subscription, host a static file at:
+
+```text
+https://jordantuppermusic.com/jordan-tupper-performances.ics
+```
+
+Then Amanda can subscribe to that URL. The next step would be adding a GitHub Action to regenerate that `.ics` file automatically from the three gig feeds.
