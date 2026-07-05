@@ -1,16 +1,5 @@
 [
   {
-    "date": "2026-07-03",
-    "startTime": "18:00",
-    "endTime": "21:00",
-    "venue": "Tequila's",
-    "location": "LA",
-    "band": "Cover 6",
-    "timeLabel": "18:00 – 21:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-07-04",
     "startTime": "18:00",
     "endTime": "22:00",
