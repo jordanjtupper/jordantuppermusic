@@ -1,16 +1,5 @@
 [
   {
-    "date": "2026-07-15",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "The Brakes Bar",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "18:00 – 22:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-07-18",
     "startTime": "18:00",
     "endTime": "21:00",
@@ -165,6 +154,17 @@
     "url": ""
   },
   {
+    "date": "2026-08-21",
+    "startTime": "21:00",
+    "endTime": "00:00",
+    "venue": "The Warehouse Saloon",
+    "location": "Maurepas, LA",
+    "band": "Night Hog",
+    "timeLabel": "21:00 – 00:00",
+    "private": false,
+    "url": ""
+  },
+  {
     "date": "2026-08-22",
     "startTime": "11:00",
     "endTime": "14:00",
@@ -264,6 +264,17 @@
     "url": ""
   },
   {
+    "date": "2026-09-26",
+    "startTime": "21:00",
+    "endTime": "00:00",
+    "venue": "Scoreboards",
+    "location": "Denham Springs, LA",
+    "band": "Night Hog",
+    "timeLabel": "21:00 – 00:00",
+    "private": false,
+    "url": ""
+  },
+  {
     "date": "2026-10-10",
     "startTime": "20:00",
     "endTime": "23:00",
@@ -272,6 +283,17 @@
     "band": "Night Hog",
     "timeLabel": "TBA",
     "private": true,
+    "url": ""
+  },
+  {
+    "date": "2026-10-20",
+    "startTime": "17:30",
+    "endTime": "20:30",
+    "venue": "Bin 77",
+    "location": "Baton Rouge, LA",
+    "band": "Standley, Tupper & Petersen",
+    "timeLabel": "17:30 – 20:30",
+    "private": false,
     "url": ""
   },
   {
