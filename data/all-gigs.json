@@ -88,6 +88,17 @@
     "url": ""
   },
   {
+    "date": "2026-08-05",
+    "startTime": "18:00",
+    "endTime": "22:00",
+    "venue": "The Brakes Bar",
+    "location": "Baton Rouge, LA",
+    "band": "Standley, Tupper & Petersen",
+    "timeLabel": "18:00 – 22:00",
+    "private": false,
+    "url": ""
+  },
+  {
     "date": "2026-08-08",
     "startTime": null,
     "endTime": null,
@@ -121,6 +132,17 @@
     "url": ""
   },
   {
+    "date": "2026-08-12",
+    "startTime": "18:00",
+    "endTime": "22:00",
+    "venue": "The Brakes Bar",
+    "location": "Baton Rouge, LA",
+    "band": "Standley, Tupper & Petersen",
+    "timeLabel": "18:00 – 22:00",
+    "private": false,
+    "url": ""
+  },
+  {
     "date": "2026-08-14",
     "startTime": "21:00",
     "endTime": "01:00",
@@ -139,6 +161,28 @@
     "location": "Zachary, LA",
     "band": "Cover 6",
     "timeLabel": "18:00 – 21:00",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-08-16",
+    "startTime": "14:00",
+    "endTime": "17:00",
+    "venue": "Southdowns Grille",
+    "location": "Baton Rouge, LA",
+    "band": "Standley, Tupper & Petersen",
+    "timeLabel": "14:00 – 17:00",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-08-19",
+    "startTime": "18:00",
+    "endTime": "22:00",
+    "venue": "The Brakes Bar",
+    "location": "Baton Rouge, LA",
+    "band": "Standley, Tupper & Petersen",
+    "timeLabel": "18:00 – 22:00",
     "private": false,
     "url": ""
   },
@@ -172,6 +216,17 @@
     "location": "LA",
     "band": "Cover 6",
     "timeLabel": "18:00 – 21:00",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-08-26",
+    "startTime": "18:00",
+    "endTime": "22:00",
+    "venue": "The Brakes Bar",
+    "location": "Baton Rouge, LA",
+    "band": "Standley, Tupper & Petersen",
+    "timeLabel": "18:00 – 22:00",
     "private": false,
     "url": ""
   },
