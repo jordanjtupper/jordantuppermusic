@@ -1,16 +1,5 @@
 [
   {
-    "date": "2026-07-25",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "T Rivers Restaurant and Lounge",
-    "location": "LA",
-    "band": "Cover 6",
-    "timeLabel": "18:00 – 22:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-07-26",
     "startTime": "10:00",
     "endTime": "13:00",
