@@ -1,16 +1,5 @@
 [
   {
-    "date": "2026-07-26",
-    "startTime": "10:00",
-    "endTime": "13:00",
-    "venue": "Copa",
-    "location": "Gonzales, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "Brunch",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-07-29",
     "startTime": "18:00",
     "endTime": "22:00",
@@ -95,6 +84,17 @@
     "location": "Baton Rouge, LA",
     "band": "Standley, Tupper & Petersen",
     "timeLabel": "18:00 – 22:00",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-08-13",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "venue": "Acrylics on the Rocks",
+    "location": "Prairieville, LA",
+    "band": "Standley, Tupper & Petersen",
+    "timeLabel": "18:00 – 21:00",
     "private": false,
     "url": ""
   },
@@ -227,6 +227,17 @@
     "location": "Livingston, LA",
     "band": "Cover 6",
     "timeLabel": "11:30 – 14:30",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-09-13",
+    "startTime": "15:00",
+    "endTime": "18:00",
+    "venue": "T & T Lounge",
+    "location": "Zachary, LA",
+    "band": "Night Hog",
+    "timeLabel": "15:00 – 18:00",
     "private": false,
     "url": ""
   },
