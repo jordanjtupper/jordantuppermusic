@@ -231,17 +231,6 @@
     "url": ""
   },
   {
-    "date": "2026-09-13",
-    "startTime": "15:00",
-    "endTime": "18:00",
-    "venue": "T & T Lounge",
-    "location": "Zachary, LA",
-    "band": "Night Hog",
-    "timeLabel": "15:00 – 18:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-09-15",
     "startTime": "17:30",
     "endTime": "20:30",
@@ -249,6 +238,17 @@
     "location": "Baton Rouge, LA",
     "band": "Standley, Tupper & Petersen",
     "timeLabel": "17:30 – 20:30",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-09-18",
+    "startTime": "15:00",
+    "endTime": "18:00",
+    "venue": "T & T Lounge",
+    "location": "Zachary, LA",
+    "band": "Night Hog",
+    "timeLabel": "15:00 – 18:00",
     "private": false,
     "url": ""
   },
@@ -304,6 +304,17 @@
     "location": "Baton Rouge, LA",
     "band": "Standley, Tupper & Petersen",
     "timeLabel": "17:30 – 20:30",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-10-24",
+    "startTime": "10:00",
+    "endTime": "11:30",
+    "venue": "Yellow Leaf Arts Festival",
+    "location": "St. Francisville, LA",
+    "band": "Standley, Tupper & Petersen",
+    "timeLabel": "10:00 – 11:30",
     "private": false,
     "url": ""
   },
