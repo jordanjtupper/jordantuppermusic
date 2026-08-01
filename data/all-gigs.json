@@ -44,17 +44,6 @@
     "url": ""
   },
   {
-    "date": "2026-08-08",
-    "startTime": "11:00",
-    "endTime": "14:00",
-    "venue": "Community Grocery",
-    "location": "Woodville, MS",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "11:00 – 14:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-08-09",
     "startTime": "10:00",
     "endTime": "13:00",
@@ -62,6 +51,17 @@
     "location": "Gonzales, LA",
     "band": "Standley, Tupper & Petersen",
     "timeLabel": "Brunch",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-08-09",
+    "startTime": "14:30",
+    "endTime": "16:00",
+    "venue": "DiGiulio Brothers",
+    "location": "Baton Rouge, LA",
+    "band": "Standley, Tupper & Petersen",
+    "timeLabel": "14:30 – 16:00",
     "private": false,
     "url": ""
   },
