@@ -1,16 +1,5 @@
 [
   {
-    "date": "2026-07-31",
-    "startTime": "20:30",
-    "endTime": "00:30",
-    "venue": "Locals",
-    "location": "LA",
-    "band": "Cover 6",
-    "timeLabel": "20:30 – 00:30",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-08-01",
     "startTime": "18:00",
     "endTime": "21:00",
