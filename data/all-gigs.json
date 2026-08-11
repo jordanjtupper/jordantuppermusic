@@ -1,16 +1,5 @@
 [
   {
-    "date": "2026-08-09",
-    "startTime": "10:00",
-    "endTime": "13:00",
-    "venue": "Copa",
-    "location": "Gonzales, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "Brunch",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-08-12",
     "startTime": "18:00",
     "endTime": "22:00",
