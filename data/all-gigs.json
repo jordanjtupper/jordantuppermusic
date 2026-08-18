@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-08-16",
-    "startTime": "14:00",
-    "endTime": "17:00",
-    "venue": "Southdowns Grille",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "14:00 – 17:00",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-08-19",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "The Brakes Bar",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "18:00 – 22:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-08-21",
     "startTime": "21:00",
     "endTime": "00:00",
@@ -34,34 +12,12 @@
   },
   {
     "date": "2026-08-22",
-    "startTime": "11:00",
-    "endTime": "14:00",
-    "venue": "Community Grocery",
-    "location": "Woodville, MS",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "11:00 – 14:00",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-08-22",
     "startTime": "18:00",
     "endTime": "21:00",
     "venue": "Victoria's",
     "location": "LA",
     "band": "Cover 6",
     "timeLabel": "18:00 – 21:00",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-08-26",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "The Brakes Bar",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "18:00 – 22:00",
     "private": false,
     "url": ""
   },
@@ -99,17 +55,6 @@
     "url": ""
   },
   {
-    "date": "2026-09-02",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "The Brakes Bar",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "18:00 – 22:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-09-05",
     "startTime": "11:30",
     "endTime": "14:30",
@@ -117,50 +62,6 @@
     "location": "Livingston, LA",
     "band": "Cover 6",
     "timeLabel": "11:30 – 14:30",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-09-09",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "The Brakes Bar",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "18:00 – 22:00",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-09-13",
-    "startTime": "14:30",
-    "endTime": "16:00",
-    "venue": "DiGiulio Brothers",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "14:30 – 16:00",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-09-15",
-    "startTime": "17:30",
-    "endTime": "20:30",
-    "venue": "Bin 77",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "17:30 – 20:30",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-09-16",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "The Brakes Bar",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "18:00 – 22:00",
     "private": false,
     "url": ""
   },
@@ -198,17 +99,6 @@
     "url": ""
   },
   {
-    "date": "2026-09-23",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "The Brakes Bar",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "18:00 – 22:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-09-26",
     "startTime": "21:00",
     "endTime": "00:00",
@@ -216,28 +106,6 @@
     "location": "Denham Springs, LA",
     "band": "Night Hog",
     "timeLabel": "21:00 – 00:00",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-09-30",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "The Brakes Bar",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "18:00 – 22:00",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-09-30",
-    "startTime": "18:00",
-    "endTime": "22:00",
-    "venue": "The Brakes Bar",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "18:00 – 22:00",
     "private": false,
     "url": ""
   },
@@ -250,28 +118,6 @@
     "band": "Night Hog",
     "timeLabel": "TBA",
     "private": true,
-    "url": ""
-  },
-  {
-    "date": "2026-10-20",
-    "startTime": "17:30",
-    "endTime": "20:30",
-    "venue": "Bin 77",
-    "location": "Baton Rouge, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "17:30 – 20:30",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-10-24",
-    "startTime": "10:00",
-    "endTime": "11:30",
-    "venue": "Yellow Leaf Arts Festival",
-    "location": "St. Francisville, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "10:00 – 11:30",
-    "private": false,
     "url": ""
   },
   {
@@ -305,17 +151,6 @@
     "band": "Cover 6",
     "timeLabel": "21:00 – 00:00",
     "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-12-12",
-    "startTime": null,
-    "endTime": null,
-    "venue": "Private Wedding",
-    "location": "New Orleans, LA",
-    "band": "Standley, Tupper & Petersen",
-    "timeLabel": "Private Event",
-    "private": true,
     "url": ""
   },
   {
