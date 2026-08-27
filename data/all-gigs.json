@@ -88,6 +88,17 @@
     "url": ""
   },
   {
+    "date": "2026-10-02",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "venue": "Private Event",
+    "location": "Baton Rouge, LA",
+    "band": "Night Hog",
+    "timeLabel": "18:00 – 21:00",
+    "private": true,
+    "url": ""
+  },
+  {
     "date": "2026-10-10",
     "startTime": "20:00",
     "endTime": "23:00",
@@ -96,17 +107,6 @@
     "band": "Night Hog",
     "timeLabel": "TBA",
     "private": true,
-    "url": ""
-  },
-  {
-    "date": "2026-10-17",
-    "startTime": "19:00",
-    "endTime": "22:00",
-    "venue": "BeerBellys",
-    "location": "Plaquemine, LA",
-    "band": "Night Hog",
-    "timeLabel": "19:00 – 22:00",
-    "private": false,
     "url": ""
   },
   {
