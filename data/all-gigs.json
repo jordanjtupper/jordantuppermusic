@@ -132,6 +132,17 @@
     "url": ""
   },
   {
+    "date": "2026-10-31",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "venue": "Private Event - Halloween Party",
+    "location": "Baton Rouge, LA",
+    "band": "Night Hog",
+    "timeLabel": "18:00 – 21:00",
+    "private": true,
+    "url": ""
+  },
+  {
     "date": "2026-11-07",
     "startTime": "11:30",
     "endTime": "14:30",
