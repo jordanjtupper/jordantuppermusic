@@ -1,16 +1,5 @@
 [
   {
-    "date": "2026-08-28",
-    "startTime": "20:00",
-    "endTime": "23:00",
-    "venue": "Charlie's Lounge",
-    "location": "Addis, LA",
-    "band": "Night Hog",
-    "timeLabel": "20:00 – 23:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-08-29",
     "startTime": "18:00",
     "endTime": "21:00",
@@ -162,6 +151,17 @@
     "band": "Cover 6",
     "timeLabel": "21:00 – 00:00",
     "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-12-05",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "venue": "Private Event",
+    "location": "Zachary, LA",
+    "band": "Night Hog",
+    "timeLabel": "18:00 – 21:00",
+    "private": true,
     "url": ""
   },
   {
