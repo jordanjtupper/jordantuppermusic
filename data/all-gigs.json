@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-08-29",
-    "startTime": "18:00",
-    "endTime": "21:00",
-    "venue": "Big J's Side Porch",
-    "location": "LA",
-    "band": "Cover 6",
-    "timeLabel": "18:00 – 21:00",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-08-29",
-    "startTime": "21:00",
-    "endTime": "00:00",
-    "venue": "The Moonlight Inn",
-    "location": "French Settlement, LA",
-    "band": "Night Hog",
-    "timeLabel": "21:00 – 00:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-09-05",
     "startTime": "11:30",
     "endTime": "14:30",
