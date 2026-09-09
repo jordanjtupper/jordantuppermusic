@@ -55,17 +55,6 @@
     "url": ""
   },
   {
-    "date": "2026-10-10",
-    "startTime": "20:00",
-    "endTime": "23:00",
-    "venue": "Private Event",
-    "location": "Baton Rouge, LA",
-    "band": "Night Hog",
-    "timeLabel": "TBA",
-    "private": true,
-    "url": ""
-  },
-  {
     "date": "2026-10-17",
     "startTime": "21:00",
     "endTime": "01:00",
@@ -107,6 +96,17 @@
     "band": "Cover 6",
     "timeLabel": "11:30 – 14:30",
     "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-11-21",
+    "startTime": "20:00",
+    "endTime": "23:00",
+    "venue": "Private Event",
+    "location": "Baton Rouge, LA",
+    "band": "Night Hog",
+    "timeLabel": "TBA",
+    "private": true,
     "url": ""
   },
   {
