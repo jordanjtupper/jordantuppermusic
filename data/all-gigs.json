@@ -1,23 +1,23 @@
 [
   {
     "date": "2026-09-18",
-    "startTime": "15:00",
-    "endTime": "18:00",
-    "venue": "T & T Lounge",
-    "location": "Zachary, LA",
-    "band": "Night Hog",
-    "timeLabel": "15:00 – 18:00",
-    "private": false,
-    "url": ""
-  },
-  {
-    "date": "2026-09-18",
     "startTime": "20:00",
     "endTime": "00:00",
     "venue": "Ragon's",
     "location": "Clinton, LA",
     "band": "Cover 6",
     "timeLabel": "20:00 – 00:00",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-09-18",
+    "startTime": "21:00",
+    "endTime": "01:00",
+    "venue": "T & T Lounge",
+    "location": "Zachary, LA",
+    "band": "Night Hog",
+    "timeLabel": "21:00 – 01:00",
     "private": false,
     "url": ""
   },
@@ -116,6 +116,17 @@
     "venue": "T's Country Bar",
     "location": "LA",
     "band": "Cover 6",
+    "timeLabel": "21:00 – 00:00",
+    "private": false,
+    "url": ""
+  },
+  {
+    "date": "2026-11-27",
+    "startTime": "21:00",
+    "endTime": "00:00",
+    "venue": "Scoreboards",
+    "location": "Denham Springs, LA",
+    "band": "Night Hog",
     "timeLabel": "21:00 – 00:00",
     "private": false,
     "url": ""
