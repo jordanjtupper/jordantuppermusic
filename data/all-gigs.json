@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-11-21",
-    "startTime": "20:00",
-    "endTime": "23:00",
-    "venue": "Private Event",
-    "location": "Baton Rouge, LA",
-    "band": "Night Hog",
-    "timeLabel": "TBA",
-    "private": true,
-    "url": ""
-  },
-  {
-    "date": "2026-11-21",
-    "startTime": "21:00",
-    "endTime": "00:00",
-    "venue": "T's Country Bar",
-    "location": "LA",
-    "band": "Cover 6",
-    "timeLabel": "21:00 – 00:00",
-    "private": false,
-    "url": ""
-  },
-  {
     "date": "2026-11-27",
     "startTime": "21:00",
     "endTime": "00:00",
